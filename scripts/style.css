@@ -12,6 +12,27 @@
     padding: 0;
 }
 
+#headlogo {
+    position: relative;
+    z-index: 10;
+}
+
+.clouds {
+    z-index: -1;
+    height: 100px;
+    scale: 0.5em;
+}
+
+.sky {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+    margin-top: -20vh;
+}
+
 .headerbox {
     height: 100vh;
     width: 100vw;
@@ -32,7 +53,7 @@
 .headingAnim {
     font-family: 'Helvetica';
     font-weight: 900;
-    font-size: 5em;
+    font-size: 3em;
     text-align: center;
 }
 
@@ -43,6 +64,7 @@
     background-size: 400%;
     -webkit-background-clip: text;
     animation: sTransition 10s linear infinite;
+    z-index: 100;
 }
 
 @keyframes sTransition {
