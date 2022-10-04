@@ -25,7 +25,7 @@
 
 .sky {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -62,6 +62,7 @@
     color: rgba(196, 0, 0, 0);
     background: linear-gradient(to right, var(--gold-web-golden), var(--sandy-brown), var(--mikado-yellow), var(--persian-green), var(--persian-green), var(--prussian-blue), var(--mikado-yellow), var(--sandy-brown));
     background-size: 400%;
+    background-clip: border-box;
     -webkit-background-clip: text;
     animation: sTransition 10s linear infinite;
     z-index: 100;
@@ -74,4 +75,9 @@
     100% {
         background-position: 400%;
     }
+}
+
+.downArrow {
+    scale: .55;
+    width: 10%;
 }
