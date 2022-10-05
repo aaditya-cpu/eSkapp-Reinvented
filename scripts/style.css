@@ -36,6 +36,23 @@
 .headerbox {
     height: 100vh;
     width: 100vw;
+    background-color: var(--oxford-blue);
+    /* uncomment me lter */
+    /* display: none; */
+}
+
+.arro-holder-1,
+.arro-holder-2,
+.arro-holder-3 {
+    display: flex;
+    background-color: var(--oxford-blue);
+}
+
+body,
+.headerbox1,
+.headerbox2,
+.headerbox3 {
+    background-color: var(--oxford-blue);
 }
 
 .khtka {
@@ -81,3 +98,6 @@
     scale: .55;
     width: 10%;
 }
+
+.arro-holder-left,
+.arro-holder-right {}

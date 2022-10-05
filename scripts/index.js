@@ -115,3 +115,13 @@ anime({
     translateY: -350,
     duration: 4000
 })
+
+
+// ----Logic for the One page scrolling
+
+
+// $('.downArrow').click(function() {
+
+//     $('.introduction').hide('slow');
+//     $('.headerbox1').css("display", "block");
+// })
