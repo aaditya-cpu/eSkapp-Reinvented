@@ -7,7 +7,7 @@ $(document).ready(function() {
     console.log('triggered!')
     if (screen.width > 500) {
         var screenSize = window.innerWidth;
-        screenSized = -(screenSize / 2) / 10;
+        screenSized = -(screenSize / 2);
         console.log('triggeresd!' + screenSize + "Value: " + screenSized);
         anime({
             targets: '.cloudone',
@@ -21,7 +21,7 @@ $(document).ready(function() {
         anime({
             targets: '.cloudtwo',
 
-            translateX: function() { return [screenSized + '%', anime.random(45, 75) + '%']; },
+            translateX: function() { return [screenSized + '%', anime.random(45, -(screenSized)) + '%']; },
             duration: 5000,
             delay: anime.stagger(dice),
             easing: 'easeInOutQuad',
@@ -110,6 +110,7 @@ anime({
     translateY: 300,
     duration: 4000
 })
+
 anime({
     targets: '.downArrow',
     translateY: -350,
@@ -119,9 +120,56 @@ anime({
 
 // ----Logic for the One page scrolling
 
+$('.headerbox1').hide();
+$('.headerbox2').hide();
+$('.headerbox3').hide();
+$('.headerbox4').hide();
 
-// $('.downArrow').click(function() {
 
-//     $('.introduction').hide('slow');
-//     $('.headerbox1').css("display", "block");
-// })
+$('.downArrow').click(function() {
+
+    $('.introduction').hide('slow');
+    $('.headerbox1').show(500);
+})
+$('.arro-holder-left-1').click(function() {
+
+    $('.introduction').show(500);
+    $('.headerbox1').css("display", "none");
+})
+$('.arro-holder-right-1').click(function() {
+
+    $('.headerbox2').show(500);
+    $('.headerbox1').css("display", "none");
+})
+$('.arro-holder-left-2').click(function() {
+
+    $('.headerbox1').show(500);
+    $('.headerbox2').css("display", "none");
+})
+$('.arro-holder-right-2').click(function() {
+
+    $('.headerbox3').show(500);
+    $('.headerbox2').css("display", "none");
+})
+$('.arro-holder-left-3').click(function() {
+
+    $('.headerbox2').show(500);
+    $('.headerbox3').css("display", "none");
+})
+$('.arro-holder-right-3').click(function() {
+
+    $('.headerbox4').show(500);
+    $('.headerbox3').css("display", "none");
+})
+$('.arro-holder-left-4').click(function() {
+
+    $('.headerbox3').show(500);
+    $('.headerbox4').css("display", "none");
+})
+$('.arro-holder-right-4').click(function() {
+
+    $('.introduction').show(500);
+    $('.headerbox4').css("display", "none");
+})
+
+// ___/nav ends////
