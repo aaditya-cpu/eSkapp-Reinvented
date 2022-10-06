@@ -12,6 +12,10 @@
     padding: 0;
 }
 
+.boday {
+    overflow: hidden;
+}
+
 #headlogo {
     position: relative;
     z-index: 10;
@@ -34,7 +38,7 @@
 }
 
 .headerbox {
-    height: 100vh;
+    height: calc(100vh -);
     width: 100vw;
     background-color: var(--oxford-blue);
     /* uncomment me lter */
@@ -77,7 +81,7 @@ body,
 .catchyText {
     position: relative;
     color: rgba(196, 0, 0, 0);
-    background: linear-gradient(to right, var(--gold-web-golden), var(--sandy-brown), var(--mikado-yellow), var(--persian-green), var(--persian-green), var(--prussian-blue), var(--mikado-yellow), var(--sandy-brown));
+    background: linear-gradient(to right, var(--gold-web-golden), var(--sandy-brown), var(--mikado-yellow), var(--persian-green), var(--persian-green), var(--mikado-yellow), var(--sandy-brown));
     background-size: 400%;
     background-clip: border-box;
     -webkit-background-clip: text;
@@ -99,5 +103,7 @@ body,
     width: 10%;
 }
 
-.arro-holder-left,
-.arro-holder-right {}
+.foramHeadin {
+    text-align: center;
+    text-transform: uppercase;
+}
