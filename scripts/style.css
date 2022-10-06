@@ -107,3 +107,11 @@ body,
     text-align: center;
     text-transform: uppercase;
 }
+
+.admtextcentfeat {
+    color: var(--gold-web-golden);
+}
+
+.admboday {
+    overflow-x: hidden;
+}
