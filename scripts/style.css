@@ -115,3 +115,7 @@ body,
 .admboday {
     overflow-x: hidden;
 }
+
+.backgroundadmtext {
+    background-color: var(--oxford-blue);
+}
